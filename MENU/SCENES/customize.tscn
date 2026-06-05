@@ -1,0 +1,266 @@
+[gd_scene format=3 uid="uid://dn1sxdooa8myp"]
+
+[ext_resource type="Script" uid="uid://eo1eng5x3y6c" path="res://MENU/SCRIPTS/customize.gd" id="1_gak5l"]
+[ext_resource type="Texture2D" uid="uid://mgym0brdiu6k" path="res://MENU/ASSETS/BACKGROUND/5.png" id="1_ltww4"]
+[ext_resource type="FontFile" uid="uid://1snr8c5uemtr" path="res://MENU/ASSETS/FONTES/Blue Block.otf" id="2_37gdk"]
+[ext_resource type="FontFile" uid="uid://ci74hdmg7pqy1" path="res://MENU/ASSETS/FONTES/SoccerLeague.ttf" id="4_gak5l"]
+[ext_resource type="Texture2D" uid="uid://b5quksgcgl5wy" path="res://MENU/ASSETS/PAISES/1.png" id="5_e7u7h"]
+[ext_resource type="Texture2D" uid="uid://deankm6ldsdvn" path="res://MENU/ASSETS/ICONS/1.png" id="5_g2shr"]
+[ext_resource type="Texture2D" uid="uid://dtpa3tmj5wiei" path="res://MENU/ASSETS/ICONS/2.png" id="6_e7u7h"]
+[ext_resource type="Texture2D" uid="uid://b6qec4lgkk4lr" path="res://MENU/ASSETS/PAISES/2.png" id="6_jea85"]
+[ext_resource type="Texture2D" uid="uid://6upfon67uisk" path="res://MENU/ASSETS/ICONS/3.png" id="7_jea85"]
+[ext_resource type="Texture2D" uid="uid://diw4ek6011nwf" path="res://MENU/ASSETS/PAISES/3.png" id="7_p05nl"]
+[ext_resource type="Texture2D" uid="uid://qymux778abct" path="res://MENU/ASSETS/ICONS/4.png" id="8_6thky"]
+[ext_resource type="Texture2D" uid="uid://bhp02hp4ikkk4" path="res://MENU/ASSETS/PAISES/4.png" id="8_dm71n"]
+[ext_resource type="Texture2D" uid="uid://c5in5glgeov8i" path="res://MENU/ASSETS/ICONS/5.png" id="9_jw8x8"]
+[ext_resource type="Texture2D" uid="uid://c58pwk5xawjv7" path="res://MENU/ASSETS/PAISES/5.png" id="9_pkdox"]
+[ext_resource type="Texture2D" uid="uid://cyfcfrgghiadk" path="res://MENU/ASSETS/PAISES/6.png" id="10_7ww66"]
+[ext_resource type="Texture2D" uid="uid://d2jjm2srwc1n8" path="res://MENU/ASSETS/ICONS/6.png" id="10_cbt5r"]
+[ext_resource type="Texture2D" uid="uid://dt3k03lrfx2rr" path="res://MENU/ASSETS/ICONS/7.png" id="11_oc5sh"]
+[ext_resource type="Texture2D" uid="uid://drdqo4ejsdsxh" path="res://MENU/ASSETS/PAISES/7.png" id="11_pfyus"]
+[ext_resource type="Texture2D" uid="uid://dbp12j7o72800" path="res://MENU/ASSETS/ICONS/8.png" id="12_g4prk"]
+[ext_resource type="Texture2D" uid="uid://boifrgtlenuxh" path="res://MENU/ASSETS/PAISES/8.png" id="12_o7uoy"]
+[ext_resource type="Texture2D" uid="uid://c4fg8ts4rwsw0" path="res://MENU/ASSETS/PAISES/9.png" id="13_5hkwu"]
+[ext_resource type="Texture2D" uid="uid://b4pd6e4wuqd84" path="res://MENU/ASSETS/ICONS/9.png" id="13_nyisu"]
+[ext_resource type="Texture2D" uid="uid://c6qocfkrhm08u" path="res://MENU/ASSETS/PAISES/10.png" id="14_cnllt"]
+[ext_resource type="Texture2D" uid="uid://m588fjf151eb" path="res://MENU/ASSETS/PAISES/11.png" id="15_iqv1w"]
+[ext_resource type="Texture2D" uid="uid://daongidswoxp2" path="res://MENU/ASSETS/PAISES/12.png" id="16_d26h6"]
+[ext_resource type="Texture2D" uid="uid://buffckw2ddpiw" path="res://MENU/ASSETS/PAISES/13.png" id="17_sv0yr"]
+
+[sub_resource type="Theme" id="Theme_37gdk"]
+default_font = ExtResource("4_gak5l")
+
+[node name="Control" type="Control" unique_id=1412973284]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gak5l")
+
+[node name="5" type="Sprite2D" parent="." unique_id=315094827]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_ltww4")
+
+[node name="Panel" type="Panel" parent="." unique_id=2143059187]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 64.0
+offset_right = 448.0
+offset_bottom = 576.0
+
+[node name="LabelNAME" type="Label" parent="Panel" unique_id=368499551]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 32.0
+offset_right = 121.0
+offset_bottom = 65.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 32
+text = "Seu nome:"
+
+[node name="LineEditNAME" type="LineEdit" parent="Panel" unique_id=1337505074]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 32.0
+offset_right = 312.0
+offset_bottom = 63.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 18
+placeholder_text = "Digite seu apelido"
+max_length = 14
+
+[node name="LabelNUM" type="Label" parent="Panel" unique_id=2110768620]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 129.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 32
+text = "Camisa:"
+
+[node name="SpinBoxNUM" type="SpinBox" parent="Panel" unique_id=1828710253]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 96.0
+offset_right = 222.5
+offset_bottom = 127.0
+theme = SubResource("Theme_37gdk")
+max_value = 999.0
+
+[node name="LabelNAÇAO" type="Label" parent="Panel" unique_id=1397488845]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 152.0
+offset_right = 128.0
+offset_bottom = 185.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 32
+text = "Nacionalidade:"
+
+[node name="Node2DNACAO" type="Node2D" parent="Panel" unique_id=1953709733]
+position = Vector2(248, 168)
+
+[node name="1" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=62393203]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("5_e7u7h")
+
+[node name="2" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=1756385066]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("6_jea85")
+
+[node name="3" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=419850691]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("7_p05nl")
+
+[node name="4" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=467519019]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("8_dm71n")
+
+[node name="5" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=2106518919]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("9_pkdox")
+
+[node name="6" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=123576954]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("10_7ww66")
+
+[node name="7" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=1354069621]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("11_pfyus")
+
+[node name="8" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=2091980991]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("12_o7uoy")
+
+[node name="9" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=2035106112]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("13_5hkwu")
+
+[node name="10" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=547971448]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("14_cnllt")
+
+[node name="11" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=1192688164]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("15_iqv1w")
+
+[node name="12" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=1699820946]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("16_d26h6")
+
+[node name="13" type="Sprite2D" parent="Panel/Node2DNACAO" unique_id=1517186869]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("17_sv0yr")
+
+[node name="ButtonLNACAO" type="Button" parent="Panel" unique_id=1230625848]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 144.0
+offset_right = 208.0
+offset_bottom = 193.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 42
+text = "<"
+
+[node name="ButtonRNACAO" type="Button" parent="Panel" unique_id=781724965]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 144.0
+offset_right = 309.0
+offset_bottom = 193.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 42
+text = ">"
+
+[node name="LabelICON" type="Label" parent="Panel" unique_id=1507795224]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 216.0
+offset_right = 292.0
+offset_bottom = 249.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 32
+text = "Escolha sua aparência:"
+
+[node name="Node2D" type="Node2D" parent="Panel" unique_id=212575911]
+position = Vector2(160, 352)
+
+[node name="1" type="Sprite2D" parent="Panel/Node2D" unique_id=914382417]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("5_g2shr")
+
+[node name="2" type="Sprite2D" parent="Panel/Node2D" unique_id=2128610127]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("6_e7u7h")
+
+[node name="3" type="Sprite2D" parent="Panel/Node2D" unique_id=427364786]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("7_jea85")
+
+[node name="4" type="Sprite2D" parent="Panel/Node2D" unique_id=340237615]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("8_6thky")
+
+[node name="5" type="Sprite2D" parent="Panel/Node2D" unique_id=577802016]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("9_jw8x8")
+
+[node name="6" type="Sprite2D" parent="Panel/Node2D" unique_id=1983029832]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("10_cbt5r")
+
+[node name="7" type="Sprite2D" parent="Panel/Node2D" unique_id=2105350575]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("11_oc5sh")
+
+[node name="8" type="Sprite2D" parent="Panel/Node2D" unique_id=21240395]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("12_g4prk")
+
+[node name="9" type="Sprite2D" parent="Panel/Node2D" unique_id=175458134]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("13_nyisu")
+
+[node name="ButtonL" type="Button" parent="Panel" unique_id=136025311]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 328.0
+offset_right = 45.0
+offset_bottom = 377.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 42
+text = "<"
+
+[node name="ButtonR" type="Button" parent="Panel" unique_id=1689318268]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 328.0
+offset_right = 293.0
+offset_bottom = 377.0
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 42
+text = ">"
+
+[node name="ButtonReturn" type="Button" parent="Panel" unique_id=497997581]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 456.0
+offset_right = 105.0
+offset_bottom = 496.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_37gdk")
+theme_override_font_sizes/font_size = 32
+text = "RETURN"
+
+[connection signal="text_changed" from="Panel/LineEditNAME" to="." method="_on_line_edit_text_changed"]
+[connection signal="value_changed" from="Panel/SpinBoxNUM" to="." method="_on_spin_box_num_value_changed"]
+[connection signal="pressed" from="Panel/ButtonLNACAO" to="." method="_on_button_lnacao_pressed"]
+[connection signal="pressed" from="Panel/ButtonRNACAO" to="." method="_on_button_rnacao_pressed"]
+[connection signal="pressed" from="Panel/ButtonL" to="." method="_on_button_l_pressed"]
+[connection signal="pressed" from="Panel/ButtonR" to="." method="_on_button_r_pressed"]
+[connection signal="pressed" from="Panel/ButtonReturn" to="." method="_on_button_return_pressed"]

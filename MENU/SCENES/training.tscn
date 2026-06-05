@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://d3yia6103li4c"]
+
+[ext_resource type="Texture2D" uid="uid://c330ar44gju17" path="res://MENU/ASSETS/BACKGROUND/Ginga Flow.png" id="1_4kxnn"]
+[ext_resource type="Script" uid="uid://biev5i6m4ry36" path="res://MENU/SCRIPTS/training.gd" id="1_x85pa"]
+[ext_resource type="FontFile" uid="uid://1snr8c5uemtr" path="res://MENU/ASSETS/FONTES/Blue Block.otf" id="2_fk5n0"]
+
+[node name="Control" type="Control" unique_id=172665301]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x85pa")
+
+[node name="GingaFlow" type="Sprite2D" parent="." unique_id=386728610]
+position = Vector2(575.99994, 324.00003)
+scale = Vector2(0.59999996, 0.6)
+texture = ExtResource("1_4kxnn")
+
+[node name="Panel" type="Panel" parent="." unique_id=1296601996]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 64.0
+offset_right = 448.0
+offset_bottom = 576.0
+
+[node name="Button" type="Button" parent="Panel" unique_id=466965902]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 456.0
+offset_right = 105.0
+offset_bottom = 496.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fk5n0")
+theme_override_font_sizes/font_size = 32
+text = "RETURN"
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
