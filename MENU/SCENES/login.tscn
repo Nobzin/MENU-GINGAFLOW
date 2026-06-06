@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://biplwcsl7nnfx"]
+
+[ext_resource type="Texture2D" uid="uid://plg5do7ag5mb" path="res://MENU/ASSETS/BACKGROUND/3.png" id="1_hv0ss"]
+[ext_resource type="FontFile" uid="uid://1snr8c5uemtr" path="res://MENU/ASSETS/FONTES/Blue Block.otf" id="2_hu1il"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hv0ss"]
+bg_color = Color(1, 1, 1, 0.60784316)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.90359825, 0.90359825, 0.9035982, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 12
+shadow_color = Color(0, 0, 0, 0.50980395)
+shadow_size = 8
+
+[node name="Control" type="Control" unique_id=1624881809]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="3" type="Sprite2D" parent="." unique_id=1588392159]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_hv0ss")
+
+[node name="Panel" type="Panel" parent="." unique_id=740927672]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -208.0
+offset_right = 160.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hv0ss")
+
+[node name="Label" type="Label" parent="Panel" unique_id=72262649]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -151.0
+offset_top = 24.0
+offset_right = 152.0
+offset_bottom = 86.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hu1il")
+theme_override_font_sizes/font_size = 64
+text = "COMING SOON"

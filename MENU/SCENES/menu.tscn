@@ -3,30 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://bo6m1hsp2xlet" path="res://MENU/ASSETS/BACKGROUND/1.png" id="1_qnims"]
 [ext_resource type="Script" uid="uid://cegywrbpwcejp" path="res://MENU/SCRIPTS/menu.gd" id="1_wpxrk"]
 [ext_resource type="FontFile" uid="uid://1snr8c5uemtr" path="res://MENU/ASSETS/FONTES/Blue Block.otf" id="2_vbyvk"]
-[ext_resource type="Texture2D" uid="uid://deankm6ldsdvn" path="res://MENU/ASSETS/ICONS/1.png" id="4_m2p23"]
-[ext_resource type="AudioStream" uid="uid://cjqax0hdokaww" path="res://MENU/ASSETS/SONGS/YTDown_YouTube_L-Etoile-D-Afrique-x-Les-Trompettes-D-Af_Media_DGEu1SwsY4E_009_128k.mp3" id="4_t30av"]
 [ext_resource type="Script" uid="uid://bnwctsq3q1v0r" path="res://MENU/SCRIPTS/script_info.gd" id="5_odlpo"]
-[ext_resource type="Texture2D" uid="uid://dtpa3tmj5wiei" path="res://MENU/ASSETS/ICONS/2.png" id="5_t30av"]
-[ext_resource type="Texture2D" uid="uid://6upfon67uisk" path="res://MENU/ASSETS/ICONS/3.png" id="6_odlpo"]
-[ext_resource type="Texture2D" uid="uid://qymux778abct" path="res://MENU/ASSETS/ICONS/4.png" id="7_2lc31"]
-[ext_resource type="Texture2D" uid="uid://c5in5glgeov8i" path="res://MENU/ASSETS/ICONS/5.png" id="8_qxcf0"]
-[ext_resource type="Texture2D" uid="uid://d2jjm2srwc1n8" path="res://MENU/ASSETS/ICONS/6.png" id="9_wecgt"]
-[ext_resource type="Texture2D" uid="uid://dt3k03lrfx2rr" path="res://MENU/ASSETS/ICONS/7.png" id="10_yuceu"]
-[ext_resource type="Texture2D" uid="uid://dbp12j7o72800" path="res://MENU/ASSETS/ICONS/8.png" id="11_elc30"]
-[ext_resource type="Texture2D" uid="uid://b4pd6e4wuqd84" path="res://MENU/ASSETS/ICONS/9.png" id="12_lvly6"]
-[ext_resource type="Texture2D" uid="uid://b5quksgcgl5wy" path="res://MENU/ASSETS/PAISES/1.png" id="15_88hi7"]
-[ext_resource type="Texture2D" uid="uid://b6qec4lgkk4lr" path="res://MENU/ASSETS/PAISES/2.png" id="16_4dn8p"]
-[ext_resource type="Texture2D" uid="uid://diw4ek6011nwf" path="res://MENU/ASSETS/PAISES/3.png" id="17_pyg3m"]
-[ext_resource type="Texture2D" uid="uid://bhp02hp4ikkk4" path="res://MENU/ASSETS/PAISES/4.png" id="18_fm2q5"]
-[ext_resource type="Texture2D" uid="uid://c58pwk5xawjv7" path="res://MENU/ASSETS/PAISES/5.png" id="19_8y7b6"]
-[ext_resource type="Texture2D" uid="uid://cyfcfrgghiadk" path="res://MENU/ASSETS/PAISES/6.png" id="20_umepr"]
-[ext_resource type="Texture2D" uid="uid://drdqo4ejsdsxh" path="res://MENU/ASSETS/PAISES/7.png" id="21_w675n"]
-[ext_resource type="Texture2D" uid="uid://boifrgtlenuxh" path="res://MENU/ASSETS/PAISES/8.png" id="22_fih4b"]
-[ext_resource type="Texture2D" uid="uid://c4fg8ts4rwsw0" path="res://MENU/ASSETS/PAISES/9.png" id="23_2en30"]
-[ext_resource type="Texture2D" uid="uid://c6qocfkrhm08u" path="res://MENU/ASSETS/PAISES/10.png" id="24_30bta"]
-[ext_resource type="Texture2D" uid="uid://m588fjf151eb" path="res://MENU/ASSETS/PAISES/11.png" id="25_a1lst"]
-[ext_resource type="Texture2D" uid="uid://daongidswoxp2" path="res://MENU/ASSETS/PAISES/12.png" id="26_yoebl"]
-[ext_resource type="Texture2D" uid="uid://buffckw2ddpiw" path="res://MENU/ASSETS/PAISES/13.png" id="27_mhe3m"]
+[ext_resource type="Texture2D" uid="uid://dq2bsgrtug3du" path="res://MENU/ASSETS/OPTIONS_SYMBOLS/door.png" id="6_re3yn"]
+[ext_resource type="Texture2D" uid="uid://dre3lcrn7gkr7" path="res://MENU/ASSETS/OPTIONS_SYMBOLS/user.png" id="7_4dqpi"]
+[ext_resource type="FontFile" uid="uid://ci74hdmg7pqy1" path="res://MENU/ASSETS/FONTES/SoccerLeague.ttf" id="15_4dn8p"]
 
 [node name="Control" type="Control" unique_id=941532434]
 layout_mode = 3
@@ -84,61 +64,16 @@ theme_override_fonts/font = ExtResource("2_vbyvk")
 theme_override_font_sizes/font_size = 100
 text = "GINGA FLOW"
 
-[node name="Backsound" type="AudioStreamPlayer2D" parent="." unique_id=359351755]
-stream = ExtResource("4_t30av")
-autoplay = true
-parameters/looping = true
-
 [node name="Panel" type="Panel" parent="." unique_id=146634640]
 layout_mode = 0
-offset_left = 712.0
+offset_left = 680.0
 offset_top = 24.0
-offset_right = 1007.99994
+offset_right = 998.85706
 offset_bottom = 88.0
 scale = Vector2(1.4, 1.4)
 
 [node name="SCRIPT_INFO" type="Node2D" parent="Panel" unique_id=1872931791]
 script = ExtResource("5_odlpo")
-
-[node name="Node2D" type="Node2D" parent="Panel/SCRIPT_INFO" unique_id=1805498570]
-position = Vector2(40, 32)
-scale = Vector2(0.3, 0.3)
-
-[node name="1" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=1686394402]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("4_m2p23")
-
-[node name="2" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=670648737]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("5_t30av")
-
-[node name="3" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=1444712307]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("6_odlpo")
-
-[node name="4" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=619122094]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("7_2lc31")
-
-[node name="5" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=2021564791]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("8_qxcf0")
-
-[node name="6" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=2096221597]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("9_wecgt")
-
-[node name="7" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=712032103]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("10_yuceu")
-
-[node name="8" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=1684234683]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("11_elc30")
-
-[node name="9" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2D" unique_id=938619951]
-scale = Vector2(0.18, 0.18)
-texture = ExtResource("12_lvly6")
 
 [node name="Label" type="Label" parent="Panel/SCRIPT_INFO" unique_id=1030748967]
 offset_left = 72.00006
@@ -150,69 +85,69 @@ theme_override_font_sizes/font_size = 24
 text = "EgoistMan"
 
 [node name="Label2" type="Label" parent="Panel/SCRIPT_INFO" unique_id=1099711833]
-offset_left = 72.00006
+offset_left = 72.00009
 offset_top = 32.0
-offset_right = 209.00006
+offset_right = 209.00009
 offset_bottom = 56.0
 theme_override_fonts/font = ExtResource("2_vbyvk")
 text = "SoccerPlayer90"
 
-[node name="Node2DNACAO" type="Node2D" parent="Panel/SCRIPT_INFO" unique_id=1385669610]
-position = Vector2(251.42856, 32.14286)
+[node name="LabelGER" type="Label" parent="Panel/SCRIPT_INFO" unique_id=1858851850]
+offset_left = 195.0
+offset_top = 6.4285707
+offset_right = 236.0
+offset_bottom = 30.42857
+theme_override_fonts/font = ExtResource("2_vbyvk")
+theme_override_font_sizes/font_size = 24
+text = "OVER"
 
-[node name="1" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=983346617]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("15_88hi7")
+[node name="LabelNUM" type="Label" parent="Panel/SCRIPT_INFO" unique_id=790927391]
+offset_left = 197.85715
+offset_top = 27.85714
+offset_right = 233.85715
+offset_bottom = 63.85714
+theme_override_fonts/font = ExtResource("15_4dn8p")
+theme_override_font_sizes/font_size = 36
+text = "50"
 
-[node name="2" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=720313554]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("16_4dn8p")
+[node name="TextureRectICON" type="TextureRect" parent="Panel/SCRIPT_INFO" unique_id=638544008]
+offset_left = 9.285706
+offset_top = 2.8571424
+offset_right = 67.285706
+offset_bottom = 60.85714
+expand_mode = 1
 
-[node name="3" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=626505523]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("17_pyg3m")
+[node name="TextureRectNAÇAO" type="TextureRect" parent="Panel/SCRIPT_INFO" unique_id=54009041]
+offset_left = 240.71426
+offset_top = 7.1428576
+offset_right = 312.14285
+offset_bottom = 57.142857
+expand_mode = 1
 
-[node name="4" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=1218498661]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("18_fm2q5")
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=176505966]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 576.0
+offset_right = 1060.0
+offset_bottom = 1096.0
+scale = Vector2(0.1, 0.1)
+theme_override_constants/separation = 12
 
-[node name="5" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=274322366]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("19_8y7b6")
+[node name="ButtonQUIT" type="Button" parent="HBoxContainer" unique_id=369089678]
+layout_mode = 2
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+icon = ExtResource("6_re3yn")
+flat = true
 
-[node name="6" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=1853698414]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("20_umepr")
-
-[node name="7" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=1191986600]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("21_w675n")
-
-[node name="8" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=927958129]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("22_fih4b")
-
-[node name="9" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=710204854]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("23_2en30")
-
-[node name="10" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=1093198117]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("24_30bta")
-
-[node name="11" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=1121516102]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("25_a1lst")
-
-[node name="12" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=911734093]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("26_yoebl")
-
-[node name="13" type="Sprite2D" parent="Panel/SCRIPT_INFO/Node2DNACAO" unique_id=400970667]
-scale = Vector2(0.04, 0.04)
-texture = ExtResource("27_mhe3m")
+[node name="ButtonLOGIN" type="Button" parent="HBoxContainer" unique_id=392500357]
+layout_mode = 2
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+icon = ExtResource("7_4dqpi")
+flat = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/ButtonQUIT" to="." method="_on_button_quit_pressed"]
+[connection signal="pressed" from="HBoxContainer/ButtonLOGIN" to="." method="_on_button_login_pressed"]

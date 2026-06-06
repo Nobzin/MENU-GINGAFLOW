@@ -1,31 +1,32 @@
 extends Node2D
 
 @onready var icons = [
-	$"Node2D/1",
-	$"Node2D/2",
-	$"Node2D/3",
-	$"Node2D/4",
-	$"Node2D/5",
-	$"Node2D/6",
-	$"Node2D/7",
-	$"Node2D/8",
-	$"Node2D/9"
+	preload("res://MENU/ASSETS/ICONS/1.png"),
+	preload("res://MENU/ASSETS/ICONS/2.png"),
+	preload("res://MENU/ASSETS/ICONS/3.png"),
+	preload("res://MENU/ASSETS/ICONS/4.png"),
+	preload("res://MENU/ASSETS/ICONS/5.png"),
+	preload("res://MENU/ASSETS/ICONS/6.png"),
+	preload("res://MENU/ASSETS/ICONS/7.png"),
+	preload("res://MENU/ASSETS/ICONS/8.png"),
+	preload("res://MENU/ASSETS/ICONS/9.png"),
+	preload("res://MENU/ASSETS/ICONS/1.png")
 ]
 
 @onready var nations = [
-	$"Node2DNACAO/1",
-	$"Node2DNACAO/2",
-	$"Node2DNACAO/3",
-	$"Node2DNACAO/4",
-	$"Node2DNACAO/5",
-	$"Node2DNACAO/6",
-	$"Node2DNACAO/7",
-	$"Node2DNACAO/8",
-	$"Node2DNACAO/9",
-	$"Node2DNACAO/10",
-	$"Node2DNACAO/11",
-	$"Node2DNACAO/12",
-	$"Node2DNACAO/13"
+	preload("res://MENU/ASSETS/PAISES/1.png"),
+	preload("res://MENU/ASSETS/PAISES/2.png"),
+	preload("res://MENU/ASSETS/PAISES/3.png"),
+	preload("res://MENU/ASSETS/PAISES/4.png"),
+	preload("res://MENU/ASSETS/PAISES/5.png"),
+	preload("res://MENU/ASSETS/PAISES/6.png"),
+	preload("res://MENU/ASSETS/PAISES/7.png"),
+	preload("res://MENU/ASSETS/PAISES/8.png"),
+	preload("res://MENU/ASSETS/PAISES/9.png"),
+	preload("res://MENU/ASSETS/PAISES/10.png"),
+	preload("res://MENU/ASSETS/PAISES/11.png"),
+	preload("res://MENU/ASSETS/PAISES/12.png"),
+	preload("res://MENU/ASSETS/PAISES/13.png")
 ]
 
 
@@ -35,13 +36,6 @@ func _ready() -> void:
 	else:
 		$Label.text = "Egoist Player"
 		
-	for icon in icons:
-		icon.visible = false
-
-	icons[global.current_icon - 1].visible = true
-	
-	for nation in nations:
-		nation.visible = false
-
-	nations[global.current_nation - 1].visible = true
+	$TextureRectICON.texture = icons[global.current_icon - 1]
+	$"TextureRectNAÇAO".texture = nations[global.current_nation - 1]
 	

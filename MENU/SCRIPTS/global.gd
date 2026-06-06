@@ -1,6 +1,6 @@
 extends Node
 
-var current_icon : int
+var current_icon := 1
 var current_name : String
 var current_num_shirt : int
-var current_nation : int
+var current_nation := 1
