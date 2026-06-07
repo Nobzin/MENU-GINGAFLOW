@@ -7,6 +7,5 @@
 stream = ExtResource("1_yave1")
 volume_db = -6.0
 pitch_scale = 0.8
-autoplay = true
 parameters/looping = true
 script = ExtResource("2_aqpd6")
