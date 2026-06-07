@@ -8,6 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://dre3lcrn7gkr7" path="res://MENU/ASSETS/OPTIONS_SYMBOLS/user.png" id="7_4dqpi"]
 [ext_resource type="FontFile" uid="uid://ci74hdmg7pqy1" path="res://MENU/ASSETS/FONTES/SoccerLeague.ttf" id="15_4dn8p"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_re3yn"]
+font = ExtResource("2_vbyvk")
+font_size = 20
+
 [node name="Control" type="Control" unique_id=941532434]
 layout_mode = 3
 anchors_preset = 15
@@ -55,6 +59,7 @@ theme_override_font_sizes/font_size = 46
 text = "CUSTOMIZE"
 
 [node name="Label" type="Label" parent="." unique_id=1695026175]
+texture_filter = 1
 layout_mode = 0
 offset_left = 24.0
 offset_top = 40.0
@@ -76,6 +81,7 @@ scale = Vector2(1.4, 1.4)
 script = ExtResource("5_odlpo")
 
 [node name="Label" type="Label" parent="Panel/SCRIPT_INFO" unique_id=1030748967]
+texture_filter = 1
 offset_left = 72.00006
 offset_top = 8.000001
 offset_right = 160.00006
@@ -144,6 +150,26 @@ layout_mode = 2
 theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
 icon = ExtResource("7_4dqpi")
 flat = true
+
+[node name="Now_playing" type="Panel" parent="." unique_id=1779940142]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 394.0
+offset_top = 614.0
+offset_right = 909.0
+offset_bottom = 654.0
+
+[node name="music_label" type="Label" parent="Now_playing" unique_id=1218736291]
+texture_filter = 1
+layout_mode = 0
+offset_left = 19.0
+offset_top = 8.0
+offset_right = 147.0
+offset_bottom = 32.0
+theme_override_fonts/font = ExtResource("2_vbyvk")
+theme_override_font_sizes/font_size = 24
+text = "Now playing -"
+label_settings = SubResource("LabelSettings_re3yn")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
